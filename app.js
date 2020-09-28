@@ -23,7 +23,7 @@ const generatePDF = async (name) => {
     
     const uri = await pdfDoc.saveAsBase64({dataUri: true});
 
-    document.getElementById("cert-pdf").src = uri;
+    // document.getElementById("cert-pdf").src = uri;
 }
 
 generatePDF("Your Name");

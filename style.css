@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background: black;
+    color: white;
+}
+
+.logo {
+    width: 240px;
+}
+
+.wrapper {
+    padding: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.wrapper .right h1{
+    margin: 25px 0;
+}
+
+.wrapper .the-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .the-form label{
+    font-size: 16px;
+}
+.the-form * {
+    margin-bottom: 20px;
+}
+
+.wrapper .the-form .btn {
+    padding: 10px 16px;
+    background-color: skyblue;
+    border: 2px solid black;
+    border-radius: 11px;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn:hover {
+    background: black !important;
+    color: white;
+    border: 2px solid white !important;
+    transition: 0.5s ease-in-out;
+}
+
+.input-tag {
+    font-size: large;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 7px 15px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    border-bottom: 1.2px solid white;
+}
+
+#myBtn {
+    display: block; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #555; 
+    color: black; 
+    cursor: pointer; 
+    padding: 20px 28px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+  }
+  
+#myBtn i{       
+    margin-right: 18px;
+    color: black;
+    font-size: 29px;
+}
+
+#myBtn i:hover{       
+    color: white;
+}
+#myBtn:hover {
+    background-color: #555; 
+}
+
+@media(max-width: 768px) {
+    .wrapper{
+        padding: 80px 100px 50px;
+        flex-direction: column;
+    }
+    .logo {
+        width: 180px;
+    }
+}
+
+@media(max-width: 576px) {
+    .wrapper{
+        padding: 100px 100px 30px;
+        flex-direction: column;
+    }
+    .logo {
+        width: 150px;
+    }
+    .right h1{
+        text-align: center;
+    }
+    #myBtn {
+        display: block; 
+        position: fixed; 
+        bottom: 90vh; 
+        right: 15px;
+        top: 20px; 
+        z-index: 99; 
+        border: none; 
+        outline: none; 
+        background-color: #555; 
+        color: black; 
+        cursor: pointer; 
+        padding: 5px 22px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+      }
+}

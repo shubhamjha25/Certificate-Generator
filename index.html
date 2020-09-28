@@ -7,18 +7,43 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 
-    <header>
-        Generate Your Certificate
-    </header>
+    <div class="wrapper">
+        <div class="left">
+            <img src="./img/logo.png" class="logo" alt="SJ LOGO">
+        </div>
 
-    <iframe src="" height="500px" width="500px"  id="cert-pdf" frameborder="0"></iframe>
+        <div class="right">
+            <h1>Generate Your Certificate</h1>
+            
+            <div class="the-form">
+                <label for="name" style="font-size: 21px;">Enter Your Name</label>
+                <input class="input-tag" type="text" name="Name" id="name" autocomplete="Name" placeholder="Your Name Here .." required>
+                <button id="submit" class="btn">Get Certificate</button>
+            </div>
+        </div>
+    </div>
+
+    <button id="myBtn">
+        <a href="https://github.com/shubhamjha25" target="_blank"><i class="fa fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-jha-252001/" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <a href="https://shubhamjha25.github.io/" target="_blank"><i class="fa fa-briefcase"></i></a>
+    </button>
+
+    <!--<iframe src="" height="500px" width="500px"  id="cert-pdf" frameborder="0"></iframe>-->
     
     <!-- PDFLib CDN -->
     <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
     <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+
 
     <!-- JavaScript --> 
     <script src="app.js"></script>
