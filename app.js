@@ -22,8 +22,14 @@ const generatePDF = async (name) => {
     })
     
     const uri = await pdfDoc.saveAsBase64({dataUri: true});
-
-    // document.getElementById("cert-pdf").src = uri;
+    
+    saveAs(uri, `${name} Certificate.pdf`);
 }
 
-generatePDF("Your Name");
+const submitButton = document.getElementById("submit");
+const nameVal = document.querySelector(".input-tag");
+
+submitButton.addEventListener('click', () => {
+    const NAME = nameVal.value;
+    generatePDF(NAME);
+});
