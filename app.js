@@ -5,7 +5,7 @@ const generatePDF = async (name) => {
     const existingBytes = await fetch("./certificate/template.pdf").then(res => res.arrayBuffer());
 
     const existingFont = await fetch('./font/BalsamiqSans-Bold.ttf').then(res => res.arrayBuffer());
-    
+
     const pdfDoc = await PDFDocument.load(existingBytes);
 
     pdfDoc.registerFontkit(fontkit);
@@ -20,9 +20,9 @@ const generatePDF = async (name) => {
         size: 40,
         font: customFont
     })
-    
+
     const uri = await pdfDoc.saveAsBase64({dataUri: true});
-    
+
     saveAs(uri, `${name} Certificate.pdf`);
 }
 
@@ -31,5 +31,10 @@ const nameVal = document.querySelector(".input-tag");
 
 submitButton.addEventListener('click', () => {
     const NAME = nameVal.value;
-    generatePDF(NAME);
+    if (NAME == null || NAME == undefined || NAME.length == 0) {
+      alert("Name cannot be Empty \n");
+    }
+    else{
+      generatePDF(NAME);
+    }
 });
