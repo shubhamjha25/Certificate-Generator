@@ -20,3 +20,8 @@ This an initial work while starting of a project.
 
 ## Supporting
 A simple star :star: to this project repo is enough to keep me motivated on this project for days. 
+
+<br />
+
+## License
+This project is licensed under MIT.
