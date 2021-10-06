@@ -24,4 +24,4 @@ A simple star :star: to this project repo is enough to keep me motivated on this
 <br />
 
 ## License
-This project is licensed under MIT.
+This project is licensed under [MIT](LICENSE).
